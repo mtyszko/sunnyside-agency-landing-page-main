@@ -1,0 +1,64 @@
+.testimonials
+  color: $grayish-blue
+  font-size: 1.4rem
+  text-align: center
+
+.testimonials__title
+  margin: 0 auto
+  padding: 6.5rem 0 3rem
+  font-weight: 900
+  text-transform: uppercase
+  letter-spacing: 3px
+.testimonials__info
+  padding: 0 0 5rem
+
+.testimonials__info__content
+  display: flex
+  flex-direction: column
+  padding: 3rem 0
+
+.testimonials__info__content__pict img
+  width: 7.2rem
+  height: 7.2rem
+  border-radius: 5rem
+
+.testimonials__info__content__txt
+  padding: 2rem
+  color: $very-dark-grayish-blue
+  font-family: Barlow, sans-serif
+  font-size: 1.8rem
+  line-height: 2.8rem
+
+.testimonials__info__content__name
+  padding: 1rem
+  color: $black
+  font-size: 1.8rem
+  font-weight: 900
+
+.testimonials__info__content__job_title
+  font-family: Barlow, sans-serif
+  font-size: 1.4rem
+  letter-spacing: 0.2px
+
+@media (min-width: 768px)
+
+  .testimonials
+    display: flex
+    flex-direction: column
+    font-size: 1.8rem
+
+  .testimonials__title
+    padding: 16rem 0 0
+
+  .testimonials__info
+    display: flex
+    justify-content: center
+    align-self: center
+    max-width: 117rem
+    padding: 6rem 0 12rem
+
+  .testimonials__info__content
+    width: clamp(25.6rem,33vw,39rem)
+
+  .testimonials__info__content__job_title
+    font-size: 1.6rem

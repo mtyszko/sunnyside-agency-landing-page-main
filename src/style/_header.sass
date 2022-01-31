@@ -1,0 +1,145 @@
+.hero
+  height: 143vw
+  background-image: url('../images/mobile/image-header.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  color: $white
+
+.hero__logo
+  padding: 2.5rem
+
+.hero__logo__img
+  display: block
+
+.nav__wrapper
+  display: flex
+  justify-content: space-between
+
+.menu
+  display: flex
+  justify-content: space-between
+  flex-direction: row-reverse
+  padding: 2.5rem
+
+.hamburger__menu
+  height: 2.4rem
+  cursor: pointer
+
+.menu__items
+  position: absolute
+  top: 8rem
+  left: 2.5rem
+  right: 2.5rem
+  background-color: $white
+  border-right: 2.5rem solid $white
+  border-top: 2.5rem solid #3EC0FF
+  display: none
+
+.active__menu
+  display: block
+
+.menu__items__content
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-self: center
+  padding: 2rem 0 4rem
+  list-style: none
+  color: $dark-grayish-blue
+  font-family: Barlow, sans-serif
+  font-size: 2rem
+
+.menu__items__content li
+  margin: 0 auto
+  padding: 2rem 2rem
+  border-radius: 5rem
+  transition: .2s
+
+  &:hover
+    cursor: pointer
+    opacity: .3
+
+.menu__items__content li:last-child
+  margin-top: 1rem
+  background-color: $yellow
+  color: $very-dark-desaturated-blue
+  font-family: 'Fraunces', serif
+  font-size: 1.6rem
+  text-transform: uppercase
+
+  &:hover
+    opacity: 1
+    color: $white
+
+.hero__headline
+  padding: 11rem 3rem 3rem
+  font-family: 'Fraunces', serif
+  font-size: clamp(3.2rem, 8vw, 5rem)
+  font-weight: 900
+  letter-spacing: 9px
+  text-align: center
+  text-transform: uppercase
+
+.hero__arrow
+  display: block
+  margin: 0 auto
+
+@media (min-width: 768px)
+
+  .hero
+    height: 56vw
+    background-image: url('../images/desktop/image-header.jpg')
+
+  .hero__headline
+    padding: clamp(2rem, 8vw, 9rem) 0 7.5rem
+
+  .nav__wrapper
+    padding: 2rem 3.5rem
+
+  .hero__logo
+    width: 17.5rem
+    padding: 2rem 0
+
+  .hero__logo__img
+    width: 100%
+
+  .menu
+    margin: 0
+    padding: 0
+
+  .hamburger__menu
+    display: none
+
+  .menu__items
+    position: static
+    margin: 0
+    padding: 0
+    display: block
+    background-color: transparent
+    border: none
+    // max-width: 47rem
+
+  .menu__items__content
+    flex-direction: row
+    color: $white
+    padding: 0
+
+  .menu__items__content li
+    margin: 0
+    padding: 16px 3rem
+    font-size: 1.8rem
+    transition: .2s
+
+    &:hover
+      cursor: pointer
+      opacity: .3
+
+  .menu__items__content li:last-child
+    margin-top: 0
+    padding: 16px 3rem
+    background-color: $white
+
+    &:hover
+      cursor: pointer
+      color: $white
+      background-color: hsla(0, 0%, 100%,.3)

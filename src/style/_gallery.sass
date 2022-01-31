@@ -1,0 +1,44 @@
+.gallery
+  display: flex
+  flex-wrap: wrap
+
+.gallery__pict
+  width: 50%
+  height: 50.7vw
+  background-size: cover
+  background-position: center
+
+.milkbottles
+  background-image: url('../images/mobile/image-gallery-milkbottles.jpg')
+
+.orange
+  background-image: url('../images/mobile/image-gallery-orange.jpg')
+
+.cone
+  background-image: url('../images/mobile/image-gallery-cone.jpg')
+
+.sugarcubes
+  background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg')
+
+@media (min-width: 768px)
+
+  .gallery
+    flex-wrap: nowrap
+
+  .gallery__pict
+    width: 25vw
+    // flex-grow: 1
+    // flex-shrink: 1
+    height: 31vw
+
+  .milkbottles
+    background-image: url('../images/desktop/image-gallery-milkbottles.jpg')
+
+  .orange
+    background-image: url('../images/desktop/image-gallery-orange.jpg')
+
+  .cone
+    background-image: url('../images/desktop/image-gallery-cone.jpg')
+
+  .sugarcubes
+    background-image: url('../images/desktop/image-gallery-sugarcubes.jpg')
